@@ -1,0 +1,367 @@
+.btn-info {
+  padding: 1rem 1.5rem;
+  border-radius: 2px;
+  border: 0;
+  background-color: #06a3da;
+  color: white;
+  cursor: pointer;
+}
+.btn-warning {
+  padding: 1rem 1.5rem;
+  border-radius: 2px;
+  border: 0;
+  background-color: #f57e57;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-info:hover,
+.btn-warning:hover {
+  color: black;
+  border-radius: 2px;
+}
+
+.banner-txt {
+  font-size: small;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.banner-heading {
+  margin: 0.75rem 0;
+  padding: 0;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.bg-banner {
+  background-color: blue;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(9, 30, 62, 0.85),
+      rgba(9, 30, 62, 0.85)
+    ),
+    url("../images/bg-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: brightness(0.4); */
+  width: 100%;
+  height: 500px;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bn-btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.karty {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -75px;
+  color: white;
+}
+.karta-btn {
+  padding: 1rem 1.5rem;
+  border-radius: 2px;
+  border: 0;
+  background-color: #eef9ff;
+  color: black;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 700;
+}
+.karta-btn-2 {
+  padding: 1rem 1.5rem;
+  border-radius: 2px;
+  border: 0;
+  background-color: rgb(9, 30, 62);
+  color: white;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 700;
+}
+.input {
+  padding: 12px;
+}
+.row-karta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.karta1 {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: #06a3da;
+  width: 300px;
+  height: 220px;
+}
+.karta2 {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: #091e3e;
+  width: 300px;
+  height: 220px;
+}
+.karta3 {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: #f57e57;
+  width: 300px;
+  height: 220px;
+}
+
+.img-card {
+  background-color: #eef9ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding-left: 124px;
+  background-color: white;
+}
+
+.banner-2 {
+  background-color: blue;
+  background-image: url("../images/bg-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: brightness(0.4); */
+  width: 100%;
+  height: 350px;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zlava-card {
+  background-color: rgba(6, 163, 218, 0.8);
+  border-radius: 4px;
+  padding: 1.5rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.cennik {
+  background-color: white;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+}
+
+.cennik-ctr {
+  width: 1092px;
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  gap: 1rem;
+}
+
+.cennik-info {
+  width: 40%;
+}
+
+.cennik-head {
+  color: #06a3da;
+  text-transform: uppercase;
+}
+.chctr {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.line1 {
+  height: 1px;
+  background-color: #06a3da;
+  width: 20px;
+  margin-right: 4px;
+}
+.line2 {
+  height: 1px;
+  background-color: #f57e57;
+  width: 8px;
+}
+
+.cen-head1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.text2 {
+  color: #6a6a6a;
+}
+
+.btn-text {
+  color: #06a3da;
+  text-transform: uppercase;
+  font-size: medium;
+  margin-top: 12px;
+}
+
+.cn-number {
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0;
+  margin-top: 6px;
+}
+
+.cennik-karty {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cennik-karta {
+  position: relative;
+  width: 190px;
+  height: 330px;
+  background-color: #eef9ff;
+  border-bottom: 1px solid #06a3da;
+}
+.price-img {
+  width: 100%;
+  height: 35%;
+}
+
+.bottom-btn {
+  position: absolute;
+  bottom: -24px;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.amount-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -16px;
+  position: relative;
+}
+.amount {
+  padding: 10px;
+  background-color: #eef9ff;
+  color: #06a3da;
+  font-weight: 600;
+  font-size: 18px;
+  width: max-content;
+}
+
+.title-pri {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.line3 {
+  height: 0.25px;
+  background-color: #06a3da;
+  width: 50%;
+  margin-top: 4px;
+}
+
+.bg-banner-3 {
+  background-color: blue;
+  background-image: url("../images/bg-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+}
+
+.specialisti {
+  /* display: grid; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 20px;
+  display: flex;
+  position: relative;
+  top: -80px;
+  justify-content: center;
+}
+.karta-cen {
+  padding: 1rem 2rem;
+  background-color: #eef9ff;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -16px;
+}
+.link {
+  padding: 10px;
+  color: #06a3da;
+  width: max-content;
+}
+
+.spec img {
+  width: 200px;
+  height: 300px;
+}
+
+.footer {
+  margin-top: 100px;
+  padding: 1rem 3rem;
+  width: 100%;
+  height: 200px;
+  background-color: #091e3e;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.foot-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.foot-card ul {
+  display: flex;
+  flex-direction: column;
+}
+.fot {
+  display: flex;
+  gap: 8px;
+  margin-left: 8px;
+  font-weight: 400;
+  color: #eef9ff;
+}
+
+.f-head {
+  font-size: 22px;
+  margin: 0;
+  margin-bottom: 16px;
+}

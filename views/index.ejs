@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/navigation.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div>
+      <div class="header-nav">
+        <div>
+          <span
+            style="color: #6b6a75; display: flex; gap: 8px; align-items: center"
+            ><i class="far fa-clock" style="color: #06a3da"></i>Otváracie
+            hodiny: Pon - Pia : 6.00 - 20.00</span
+          >
+        </div>
+        <div class="head-btns">
+          <div
+            class="head-btn"
+            style="padding-left: 30px; border-right: 0.5px solid white"
+          >
+            <i class="fa fa-envelope-open"></i>
+            info@ZubZen.com
+          </div>
+          <div class="head-btn">
+            <i class="fa fa-phone-alt"></i>
+            +000 123 456 789
+          </div>
+        </div>
+      </div>
+      <nav class="nav">
+        <div class="nav-content">
+          <a href="#home" class="logo-link">
+            <h3
+              style="
+                font-weight: 700;
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                font-size: 32px;
+              "
+              class="link-zen"
+            >
+              <i class="fas fa-tooth fa-lg" style="color: #06a3da"></i>ZubZen
+            </h3>
+          </a>
+          <ul>
+            <li><a href="/">Úvod</a></li>
+            <li><a href="#sluzby">Služby</a></li>
+            <li><a href="#cennik">Cenník</a></li>
+            <li><a href="#specialisti">Naši špecialisti</a></li>
+            <button class="nav-btn">Objednajte sa</button>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="bg-banner">
+      <div class="banner-ctr">
+        <span class="banner-txt"
+          >Zuby zdravé, úspev krásny: Starajte sa o svoje ústa každý deň!</span
+        >
+        <h5 class="banner-heading">
+          Získajte najlepšiu <br />
+          zubnú staroslivosť.
+        </h5>
+        <div class="bn-btns">
+          <button class="btn-info">Objednajte sa</button>
+          <button class="btn-warning">Kontaktuje nás</button>
+        </div>
+      </div>
+    </div>
+
+    <section style="background-color: white">
+      <div class="karty">
+        <div class="karta1">
+          <h3>Otváracie hodiny</h3>
+          <div class="row-karta">
+            <span>Pon - Pia</span><span>6:00 - 20:00</span>
+          </div>
+          <div class="row-karta">
+            <span>Sobota</span><span>9:00 - 16:00</span>
+          </div>
+          <div class="row-karta">
+            <span>Nedeľa</span><span>9:00 - 13:00</span>
+          </div>
+          <button class="karta-btn">Objednajte sa</button>
+        </div>
+        <div class="karta2">
+          <form action="/search-doctor" method="POST"></form>
+          <h3>Vyhľadať doktora</h3>
+          <input
+            class="input"
+            type="date"
+            name="datum"
+            placeholder="dátum objednania"
+          />
+          <select
+            class="input"
+            name="sluzba"
+            id="sluzba"
+            aria-placeholder="dsds"
+          >
+            <option value="" disabled selected>Vyberte službu</option>
+          </select>
+          <button class="karta-btn" type="submit">Vyhľadajte</button>
+        </div>
+        <div class="karta3">
+          <h3>Objednajte sa</h3>
+          <p>
+            Ak máte problémy so zubami, alebo sa chcete len poradiť. Neváhajte
+            nám zavolať na číslo:
+          </p>
+          <h2 style="margin: 0">+000 123 456 789</h2>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div style="display: flex; gap: 1rem">
+        <div>
+          <img src="/images/service-promo.jpg" alt="service" height="300px" />
+        </div>
+        <div style="display: flex; flex-direction: column">
+          <div class="chctr">
+            <p class="cennik-head">Naše služby</p>
+            <div style="display: flex; align-items: center">
+              <div class="line1"></div>
+              <div class="line2"></div>
+            </div>
+          </div>
+          <h4>Ponúkame iba služby tej najvyššej kvality</h4>
+          <div style="display: flex; gap: 30px">
+            <div class="img-card">
+              <img
+                src="/images/service-1.jpg"
+                alt="service"
+                height="150px"
+                width="250px"
+              />
+              <p>Estetická stomatológia</p>
+            </div>
+            <div class="img-card">
+              <img
+                src="/images/service-2.jpg"
+                alt="service"
+                height="150px"
+                width="250px"
+              />
+              <p>Zubná chirurgia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; gap: 40px">
+        <div class="img-card">
+          <img
+            src="/images/service-3.jpg"
+            alt="service"
+            height="150px"
+            width="250px"
+          />
+          <p>Zubné implantáty</p>
+        </div>
+        <div class="img-card">
+          <img
+            src="/images/service-4.jpg"
+            alt="service"
+            height="150px"
+            width="250px"
+          />
+          <p>Bielenie zubov</p>
+        </div>
+        <div
+          style="
+            background-color: #06a3da;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: 300px;
+          "
+        >
+          <h6>Objednajte sa</h6>
+          <p>
+            Ak máte problémy so zubami, alebo sa chcete len poradiť. Neváhajte
+            nám zavolať na číslo:
+          </p>
+          <h6>+000 123 456 789</h6>
+        </div>
+      </div>
+    </div>
+
+    <article class="banner-2">
+      <div class="zlava-card">
+        <h2 style="text-align: center">
+          Ušetrite až 30% pri prvej <br />
+          prehliadke
+        </h2>
+        <p>
+          Prejdie k nám a získajte túto neskutočnú zľavu. Všetky ošetrenia a
+          služby, súvisiace s odstránením nájdených problémov počas prvej
+          prehliadky, budú účtované so zľavou 30%s
+        </p>
+        <div class="btns-ctr">
+          <button class="karta-btn-2">Objednajte sa</button>
+          <button class="karta-btn">Zistite viac</button>
+        </div>
+      </div>
+    </article>
+
+    <section id="cennik" class="cennik">
+      <div class="cennik-ctr">
+        <div class="cennik-info">
+          <div class="chctr">
+            <p class="cennik-head">Cenník</p>
+            <div style="display: flex; align-items: center">
+              <div class="line1"></div>
+              <div class="line2"></div>
+            </div>
+          </div>
+          <p class="cen-head1">Ponúkame férové ceny za špičkovú kvalitu</p>
+          <div class="text2">
+            Ponúkame férové ceny za špičkovú kvalitu Neváhajte využiť naše
+            príjemné a ukľudnujúce prosredie, v ktorom sa budete cítiť bezpečne
+            a bez zbytočných stresov. Klinika je vybavena najnovšími
+            technológiami a vysoko kvalifikovaným a profesionálnym zubným
+            personálom, vrátane zubárov, ortodontov a zubných hygienikov.
+          </div>
+          <div class="btn-text">Objednajte sa na čísle</div>
+          <p class="cn-number">+000 123 456 789</p>
+        </div>
+        <div class="card-container">
+          <div class="cennik-karty">
+            <% pricelists.forEach(pricelist => { %>
+            <div class="cennik-karta">
+              <img src="<%= pricelist.obrazok %>" alt="img" class="price-img" />
+              <div class="amount-ctr">
+                <div class="amount"><%= pricelist.cena %>€</div>
+              </div>
+              <div class="title-pri">
+                <span><%= pricelist.nazov %></span>
+                <div class="line3"></div>
+              </div>
+              <div
+                style="
+                  padding: 12px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 8px;
+                "
+              >
+                <% pricelist.vyhody.forEach(vyhoda => { %>
+                <div class="row-karta" sty>
+                  <span style="color: #6a6a6a"><%= vyhoda %></span
+                  ><i class="fas fa-check" style="color: #06a3da"></i>
+                </div>
+                <% }) %>
+              </div>
+              <div class="bottom-btn">
+                <button class="btn-info">Obednajte sa</button>
+              </div>
+            </div>
+            <% }) %>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <article style="position: relative; background-color: white">
+      <div class="bg-banner-3"></div>
+      <div class="specialisti">
+        <div class="karta-cen">
+          <div class="chctr">
+            <p class="cennik-head">Naši špecialisti</p>
+            <div style="display: flex; align-items: center">
+              <div class="line1"></div>
+              <div class="line2"></div>
+            </div>
+          </div>
+          <p style="font-size: 28px">
+            Spoznaje naších certifikovaných <br />
+            zubných <br />
+            profesionálov
+          </p>
+          <button class="btn-info">Objednajte sa</button>
+        </div>
+        <% doctors.forEach(doctor => { %>
+        <div class="cennik-karta">
+          <img src="<%= doctor.img %>.jpg" alt="spec" class="price-img" />
+          <div class="amount-ctr">
+            <% doctor.links.forEach(link => { %>
+            <a href="<%= link %>" class="amount">
+              <i
+                style="color: #06a3da"
+                class="fab fa-lg fa-<%= link.split('/')[0] %>"
+              ></i>
+            </a>
+            <% }) %>
+          </div>
+          <div>
+            <p style="font-size: 20px; text-align: center">
+              <%= doctor.name %>
+            </p>
+            <p style="font-size: 18px; text-align: center; color: #06a3da">
+              <%= doctor.job %>
+            </p>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </article>
+
+    <div class="footer">
+      <div class="foot-card">
+        <p class="f-head">Obľúbené odkazy</p>
+        <span class="fot"
+          ><i class="fas fa-arrow-right" style="color: #06a3da"></i>Úvod</span
+        >
+        <span class="fot"
+          ><i class="fas fa-arrow-right" style="color: #06a3da"></i>O nás</span
+        >
+        <span class="fot"
+          ><i class="fas fa-arrow-right" style="color: #06a3da"></i>Naši
+          špecialisti</span
+        >
+      </div>
+      <div class="foot-card">
+        <p class="f-head">Užitočné odkazy</p>
+        <span class="fot"
+          ><i class="fas fa-arrow-right" style="color: #06a3da"></i>Služby</span
+        >
+        <span class="fot"
+          ><i class="fas fa-arrow-right" style="color: #06a3da"></i>Cenník</span
+        >
+        <span class="fot"
+          ><i class="fas fa-arrow-right" style="color: #06a3da"></i>
+          Kontakt</span
+        >
+      </div>
+      <div class="foot-card">
+        <p class="f-head">Kde nás nájdete</p>
+        <span class="fot"
+          ><i class="fas fa-arrow-right" style="color: #06a3da"></i>123 Ulica,
+          Bratislava, Slovensko</span
+        >
+        <span class="fot"
+          ><i class="fas fa-arrow-right" style="color: #06a3da"></i
+          >info@ZubZen.com</span
+        >
+        <span class="fot"
+          ><i class="fas fa-arrow-right" style="color: #06a3da"></i> +000 123
+          456 789</span
+        >
+      </div>
+      <div class="foot-card">
+        <p class="f-head">Sledujte nás na</p>
+        <div style="display: flex; gap: 12px">
+          <i style="color: #06a3da" class="fab fa-lg fa-twitter-square"></i>
+          <i style="color: #06a3da" class="fab fa-lg fa-facebook-square"></i>
+          <i style="color: #06a3da" class="fab fa-lg fa-linkedin"></i>
+          <i style="color: #06a3da" class="fab fa-lg fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

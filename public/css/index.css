@@ -1,0 +1,24 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 1320px;
+  margin-left: calc((100vw - 1320px) / 2);
+  /* margin-right: calc((100vw - 1320px) / 2); */
+}
+html {
+  font-family: "Jost", Courier;
+  background-color: #091e3e;
+}
+
+a,
+* {
+  text-decoration: none;
+}
+
+.link-zen {
+  color: #06a3da;
+}
